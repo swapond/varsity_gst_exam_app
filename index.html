@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="src/output.css" rel="stylesheet">
+    <title>Varsity App</title>
+    <style>
+        .banner {
+            width: calc(100% - 32px);
+        }
+
+        * {
+            user-select: none;
+        }
+    </style>
+</head>
+<body class="max-w-screen-md mx-auto mb-[200px]">
+<div class="bg-[#EC2127] mb-[120px] min-h-[200px] h-[30vh] relative width-full">
+    <div class="pt-12 px-4">
+        <div class="branding">
+            <img alt="" src="assets/logo.png">
+        </div>
+
+        <!--        SHUFFLE BTN-->
+        <button class="absolute right-6 -bottom-3 z-10" id="shuffle">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+
+        </button>
+
+        <!--        DHAKA-->
+        <div class="banner py-6 px-3 flex gap-4 bg-white rounded-md shadow-lg absolute bottom-[-84px]" id="du">
+            <img alt="" src="assets/du_logo.png">
+            <div class="flex flex-col space-y-3">
+                <span class="text-lg">4 Months 6 Days 1 Hour...</span>
+                <span class="text-gray-800">96K Aspirants</span>
+                <span class="text-gray-800">1/26 per Seat</span>
+            </div>
+        </div>
+        <!--        GST -->
+        <div class="hidden banner py-6 px-3 flex gap-4 bg-white rounded-md shadow-lg absolute bottom-[-84px]" id="gst">
+            <img alt="" src="assets/gst.png">
+            <div class="flex flex-col space-y-3">
+                <span class="text-lg">445 Months 6 Days 1 Hour...</span>
+                <span class="text-gray-800">96K Aspirants</span>
+                <span class="text-gray-800">1/26 per Seat</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class=" grid grid-cols-3 gap-4 mx-auto px-4 pt-12">
+    <div class="p-4 bg-white rounded-md shadow-lg max-w-[150px] flex flex-col items-center gap-4">
+        <img alt="" class="max-w-[50px] max-h-[50px]" src="assets/aap.png">
+        <div class="flex flex-col items-center">
+            <h3 class=" font-bold">AAPaths...</h3>
+            <span class="text-sm">Exam</span>
+        </div>
+    </div>
+    <div class="p-4 bg-white rounded-md shadow-lg max-w-[150px] flex flex-col items-center gap-4">
+        <img alt="" class="max-w-[50px] max-h-[50px]" src="assets/apars_classroom.png">
+        <div class="flex flex-col items-center">
+            <h3 class=" font-bold">Apars...</h3>
+            <span class="text-sm">Exam</span>
+        </div>
+    </div>
+    <div class="p-4 bg-white rounded-md shadow-lg max-w-[150px] flex flex-col items-center gap-4">
+        <img alt="" class="max-w-[50px] max-h-[50px]" src="assets/apars_classroom.png">
+        <div class="flex flex-col items-center">
+            <h3 class=" font-bold">Apars...</h3>
+            <span class="text-sm">Exam <span class="text-yellow-500">Paid</span></span>
+        </div>
+    </div>
+
+</div>
+<footer class=" max-w-screen-md mx-auto fixed bottom-0 bg-[#EC2127] w-full text-white py-6 px-4">
+    <ul class="flex gap-4 justify-evenly menu-icon">
+        <li>
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </li>
+        <li>
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </li>
+        <li>
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </li>
+        <li>
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </li>
+    </ul>
+</footer>
+
+<script>
+    const btn = document.getElementById('shuffle');
+    btn.addEventListener('click', () => {
+        document.querySelector('#gst').classList.toggle('hidden');
+        document.querySelector('#du').classList.toggle('hidden');
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Load External Website</title>
+</head>
+<body>
+<div id="result-container"></div>
+
+<script>
+    // Function to load external website using Fetch API
+    function loadExternalWebsite(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('result-container').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading external website:', error);
+            });
+    }
+
+    // Call the function with the YouTube URL
+    loadExternalWebsite('https://www.aapathshala.com/');
+</script>
+</body>
+</html>
